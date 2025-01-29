@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Gallery with Background Colors</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+            gap: 10px; /* Spacing between items */
+            padding: 10px;
+        }
+
+        .gallery div {
+            height: 150px; /* Fixed height for all items */
+            border-radius: 8px; /* Optional: Add rounded corners */
+        }
+
+        /* First row layout */
+        .gallery div:nth-child(1) {
+            grid-column: span 9; /* First item spans 9 columns */
+            background-color: #ff6f61; /* Coral color */
+        }
+
+        .gallery div:nth-child(2),
+        .gallery div:nth-child(3) {
+            grid-column: span 3; /* Next two items span 3 columns each */
+            background-color: #6b5b95; /* Purple color */
+        }
+
+        /* Second row layout */
+        .gallery div:nth-child(4) {
+            grid-column: span 9; /* First item in second row spans 9 columns */
+            background-color: #88b04b; /* Green color */
+        }
+
+        .gallery div:nth-child(5),
+        .gallery div:nth-child(6) {
+            grid-column: span 3; /* Next two items span 3 columns each */
+            background-color: #ffa500; /* Orange color */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
+
+Understanding grid-auto-rows and grid-auto-columns with Examples
+In CSS Grid, grid-auto-rows and grid-auto-columns are used to define the default size of rows and columns when new items are added without explicitly specifying their placement.
+
+
+Difference Between justify-items and justify-self
+Both justify-items and justify-self are used to control how items align horizontally inside a CSS grid container, but they work at different levels:
+
+justify-items: Applies to all items in a grid container.
+justify-self: Applies to a specific item inside the grid.
