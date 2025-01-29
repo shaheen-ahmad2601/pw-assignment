@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Div with Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;   
+            height: 100vh;          
+        }
+        .centered-div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="centered-div"></div>
+    </div>
+</body>
+</html>
+
+
+
+Q1. Main Differences Between CSS Flexbox and CSS Grid Layout Models
+Dimensionality:
+
+Flexbox: Designed for one-dimensional layouts (either rows or columns).
+
+Grid: Designed for two-dimensional layouts (rows and columns simultaneously).
+
+Use Cases:
+
+Flexbox: Ideal for aligning items within a single row or column, such as navigation bars, centering content, or distributing space within a container.
+
+Grid: Best for complex layouts that require control over both rows and columns, such as entire page layouts or grid-based designs.
+
+Control:
+
+Flexbox: Provides control over the alignment, spacing, and distribution of items along a single axis.
+
+Grid: Offers precise control over the placement and sizing of items in both rows and columns.
+
+Complexity:
+
+Flexbox: Simpler to use for straightforward, linear layouts.
+
+Grid: More powerful for intricate, multi-dimensional layouts.
+
+When to Choose One Over the Other:
+
+Use Flexbox when you need to align items in a single direction (row or column) and want to distribute space within a container.
+
+Use Grid when you need to create complex layouts with both rows and columns, and require precise control over the placement and sizing of items.
+
+Q2. Role of Key Properties in Flexbox Layout Mode
+justify-content:
+
+Controls the alignment of items along the main axis (horizontal axis by default).
+
+Common values: flex-start, flex-end, center, space-between, space-around, space-evenly.
+
+align-items:
+
+Controls the alignment of items along the cross axis (vertical axis by default).
+
+Common values: flex-start, flex-end, center, baseline, stretch.
+
+gap:
+
+Sets the spacing between items in the flex container.
+
+Can be specified as a single value (e.g., 10px) for both row and column gaps, or separately (e.g., 10px 20px).
+
+flex-direction:
+
+Defines the direction of the main axis.
+
+Common values: row, row-reverse, column, column-reverse.
+
+flex-wrap:
+
+Controls whether the flex items should wrap onto multiple lines or stay on a single line.
+
+Common values: nowrap, wrap, wrap-reverse.
